@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing</title>
+       
+    
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="javascript.js"></script>
+
+
+        
+    </head>
+    
+    <body>
+        <div id="preloader"></div>
+       
+        
+            <nav>
+                
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" style="font-size:24px"></i>
+                
+            </label>
+                <label class="logo">DivLoopers</label>
+                <img src="logo.png" width="100" class="imagelogo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#CHAPTERS">CHAPTERS</a></li>
+                <li><a href="#">IMAGES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>ABOUT</a></li>
+            </ul>
+            
+            </nav>
+            <div id="parallax">
+                <section id="sectionbruh">
+               
+                    <div class="box">
+                        
+                    
+                        <h1>Dumagat Tribe <br> Documentary</h1>     
+                    </div>
+                    <video id="video1" autoplay loop muted poster="blueaarchive.mp4">
+                        <source src="" type="video/mp4">
+                    </video>
+   
+                </section>
+
+            
+                
+
+                
+            <div class="Container reveal">
+                <div class="section1">
+                    <div class="Container reveal">
+                        <h1>CHAPTERS</h1>
+                        <div class="container">
+                            
+                            <div class="cards">
+                                <div class="card-img">
+                                    <img src="Kafka2.jpg" alt="chapter1">
+                                </div>
+                                <div class="card-body">
+                                    <h2>CHAPTER 1</h2>
+                                </div>
+                                <div class="card-footer">
+                                    <a href=" https://kazuma4.github.io/Saikou-Cafe/">Learn More!</a>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card-img">
+                                    <img src="Kafka3.jpg" alt="chapter1">
+                                </div>
+                                <div class="card-body">
+                                    <h2>CHAPTER 2</h2>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="">Learn More!</a>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card-img">
+                                    <img src="Kafka2.jpg" alt="chapter1">
+                                </div>
+                                <div class="card-body">
+                                    <h2>CHAPTER 3</h2>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="">Learn More!</a>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card-img">
+                                    <img src="kafka4.jpg" alt="chapter1">
+                                </div>
+                                <div class="card-body">
+                                    <h2>CHAPTER 4</h2>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://kazuma4.github.io/birdy69.github.io/">Learn More!</a>
+                                </div>
+                            </div>
+                            
+                    </div>
+                    
+                    
+                    
+                        </div>
+                    <div class="content1">
+                        <section id="CHAPTERS">
+                            <h2></h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
+            
+                
+
+
+            
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealbottom = reveals[i].getBoundingClientRect().bottom;
+                    var revealpoint = 150;
+                    
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                        
+                    }
+                }
+            }
+          
+        </script>
+        <script>
+            var loader = document.getElementById("preloader");
+
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+            window.addEventListener('load', function(load) {
+            window.removeEventListener('load', load, false);               
+            setTimeout(function(){loader.style.display = 'none'},2000);
+
+            },false);
+        </script>
+
+        <script>
+            const bg = document.getElementById('sectionbruh');
+            window.addEventListener('scroll', function(){
+                bg.style.scale = 100 - +window.pageYOffset/12+'%';
+                bg.style.opacity = 1 - +window.pageYOffset/700+'';
+            })
+        </script>
+        
+        
+    </body>
+</html>
